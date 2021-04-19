@@ -1,0 +1,17 @@
+{
+  "name": "Foldable MP7A1",
+  "authors": [
+    "M'aiq"
+  ],
+  "guid": "maiq.foldablemp7a1",
+  "version": "1.0.0",
+  "require": "0.3.2",
+  "assets": {
+    "patcher": {
+      "hookgen.conf": "deli:monomod.hookgen"
+    },
+    "setup": {
+      "FoldableMP7A1.dll": "deli:assembly"
+    }
+  }
+}

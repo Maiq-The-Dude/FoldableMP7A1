@@ -32,6 +32,7 @@ namespace FoldableMP7A1
 
 		private void AddFoldingHandle(ClosedBoltWeapon weapon)
 		{
+			var handlePhys = weapon.transform.Find("Phys/Phys_Cube (12)");
 			var geo = weapon.transform.Find("Geo");
 			var flipper = geo.Find("FlipSightTrigger_Front");
 			var handle = geo.Find("Handle");
@@ -44,6 +45,7 @@ namespace FoldableMP7A1
 			hflipper.Flipsight = handle;
 
 			weapon.Foregrip.transform.parent = handle;
+			handlePhys.parent = handle;
 		}
 
 		private void Unhook()
